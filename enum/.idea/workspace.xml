@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faab0f4e-9fd2-4957-8fe4-48d1101e1377" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/enum.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EnumImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EnumMoneyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EnumSwitch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Enums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RandomTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constantSpecificMethod/ConstantSpecificMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/food/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/food/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/trafficlight/TrafficLight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/Parcel3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/Parcel6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/Parcel7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/Parcel8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/Sequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/Wrapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/demo/DotNew.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/demo/DotThis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/demo/Parcel1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/demo/Parcel2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/demo/Parcel5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/innerclasses/Contents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/innerclasses/Destination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/innerclasses/Parcel11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../innerClass/src/innerclasses/Parcel4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
-              <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/src/constantSpecificMethod/ConstantSpecificMethod.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#266#267#0" expanded="true" />
@@ -190,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1400" />
     <option name="height" value="877" />
@@ -233,6 +240,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -280,12 +288,12 @@
       <option name="presentableId" value="Default" />
       <updated>1557224556054</updated>
       <workItem from="1557224557346" duration="1461000" />
-      <workItem from="1557280951437" duration="8693000" />
+      <workItem from="1557280951437" duration="9841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10154000" />
+    <option name="totallyTimeSpent" value="11302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1400" height="877" extended-state="0" />
@@ -406,7 +414,7 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -416,7 +424,7 @@
     <entry file="file://$PROJECT_DIR$/src/constantSpecificMethod/ConstantSpecificMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#266#267#0" expanded="true" />
