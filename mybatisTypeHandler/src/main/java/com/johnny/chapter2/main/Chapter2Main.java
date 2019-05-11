@@ -13,6 +13,7 @@ public class Chapter2Main {
 
   public static void main(String[] args) {
 
+    //我的施恩哦按常见病呢
     SqlSession sqlSession = null;
     try {
       sqlSession = SqlSessionFactoryUtil.openSqlSession();

@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ed6126-c39f-4e14-b338-b21b6cf95017" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mybais_chapter2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helloMybatis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../helloMybatis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybais_chapter2/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybais_chapter2/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybais_chapter2/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybais_chapter2/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybais_chapter2/.idea/dataSources/b9c1720b-1c9d-4a93-99bd-ece3ddcda67b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybais_chapter2/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybais_chapter2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybais_chapter2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybais_chapter2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybais_chapter2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybais_chapter2/src/main/java/com/johnny/chapter2/po/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybais_chapter2/src/main/java/com/johnny/chapter2/po/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybais_chapter2/target/classes/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybais_chapter2/target/classes/main/resources/com/johnny/chapter2/mapper/roleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybais_chapter2/target/classes/main/resources/config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybais_chapter2/target/classes/main/resources/log4j2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybais_chapter2/target/classes/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/johnny/chapter2/main/Chapter2Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/johnny/chapter2/main/Chapter2Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/johnny/chapter2/main/Chapter2Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="315">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,8 +59,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="563" />
-    <option name="width" value="1440" />
+    <option name="y" value="173" />
+    <option name="width" value="1400" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -152,6 +136,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -179,12 +164,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557482304540</updated>
-      <workItem from="1557482305735" duration="1112000" />
+      <workItem from="1557482305735" duration="1130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1112000" />
+    <option name="totallyTimeSpent" value="1130000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1640" height="1027" extended-state="6" />
@@ -230,8 +215,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/johnny/chapter2/main/Chapter2Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        <state relative-caret-position="315">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
