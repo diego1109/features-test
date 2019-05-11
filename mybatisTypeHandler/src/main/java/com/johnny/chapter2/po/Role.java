@@ -1,5 +1,8 @@
 package com.johnny.chapter2.po;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @NoArgsConstructor
 public class Role {
     private Long id;
