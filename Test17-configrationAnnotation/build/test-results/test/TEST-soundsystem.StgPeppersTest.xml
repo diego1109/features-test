@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="soundsystem.StgPeppersTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-07-05T11:44:13" hostname="lyyangdeMBP" time="0.002">
+  <properties/>
+  <testcase name="cdShouldNotBeNull" classname="soundsystem.StgPeppersTest" time="0.002"/>
+  <testcase name="userShouldNotBeNull" classname="soundsystem.StgPeppersTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[七月 05, 2019 7:44:13 下午 org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+信息: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+七月 05, 2019 7:44:13 下午 org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+信息: Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+]]></system-err>
+</testsuite>
