@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yang.mybatis.infrastructure.mybatis.mapper.ArticleQueryMapper">
+
+	<sql id="articleData">
+		select
+			A.id articleId,
+			A.user_id articleUserId,
+			A.body articleBody
+	</sql>
+
+	<select id="findById" resultMap="articleData">
+		<include refid="articleData"/>
+		from articles A
+		where A.id = #{articleId}
+	</select>
+
+	<select id="findByUserId" resultMap="articleData">
+		<include refid="articleData"/>
+		from articles A
+		where A.user_id = #{userId}
+	</select>
+
+	<select id="findArticles" resultType="java.lang.String">
+		select id
+		from articles A
+		where A.user_id = #{userId}
+	</select>
+
+	<resultMap id="articleData" type="com.yang.mybatis.application.data.ArticleData">
+		<id property="id" column="articleId"/>
+		<result property="userId" column="articleUserId"/>
+		<result property="body" column="articleBody"/>
+	</resultMap>
+</mapper>

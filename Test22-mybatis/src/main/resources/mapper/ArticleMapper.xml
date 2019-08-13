@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yang.mybatis.infrastructure.mybatis.mapper.ArticleMapper">
+
+	<insert id="save">
+		insert into articles (id,user_id,body)
+		values (#{article.id},#{article.userId},#{article.body})
+	</insert>
+
+	<select id="findById" resultMap	="article">
+		select
+			id articleId,
+			user_id articleUserId,
+			body	articleBody
+		from articles A
+		where A.id = #{articleId}
+	</select>
+
+	<resultMap id="article" type="com.yang.mybatis.domain.Article">
+		<id property="id" column="articleId"/>
+		<result property="userId" column="articleUserId"/>
+		<result property="body" column="articleBody"/>
+	</resultMap>
+
+</mapper>
