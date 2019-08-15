@@ -11,7 +11,10 @@
 	</sql>
 
 	<select id="findById" resultMap="articleData">
-		<include refid="articleData"/>
+		select
+			A.id articleId,
+			A.user_id articleUserId,
+			A.body articleBody
 		from articles A
 		where A.id = #{articleId}
 	</select>
@@ -21,6 +24,15 @@
 		from articles A
 		where A.user_id = #{userId}
 	</select>
+
+<!--	<select id="findByUserId" resultType="com.yang.mybatis.application.data.ArticleData">-->
+<!--		select-->
+<!--			A.id id,-->
+<!--			A.user_id userId,-->
+<!--			A.body body-->
+<!--		from articles A-->
+<!--		where A.user_id = #{userId}-->
+<!--	</select>-->
 
 	<select id="findArticles" resultType="java.lang.String">
 		select id
@@ -33,4 +45,5 @@
 		<result property="userId" column="articleUserId"/>
 		<result property="body" column="articleBody"/>
 	</resultMap>
+
 </mapper>
