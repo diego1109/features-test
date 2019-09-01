@@ -16,4 +16,11 @@ public class PizzaTest {
     assertThat(testPz.getDeliveryTimeInDays(),is(2));
   }
 
+  @Test
+  public void print_enums_ordinal() {
+    for (PizzaStatus status : PizzaStatus.values()) {
+      System.out.println(status.ordinal() + 1);
+    }
+  }
+
 }
