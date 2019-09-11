@@ -1,9 +1,0 @@
-import os
-
-print("hello world!")
-print("hello world2!")
-print("helldo world2!")
-print("helldo world2!")
-print("helldo world4!")
-print("helldo world5!")
-print("helldo world7!")
