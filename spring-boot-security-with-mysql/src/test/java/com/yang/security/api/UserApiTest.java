@@ -74,7 +74,6 @@ public class UserApiTest {
   }
 
   @Test
-//  @WithMockUser(value = "spring")
   public void should_query_user_succeed(){
     UserData userData = new UserData(newUser.getId(), newUser.getEmail(), newUser.getUserName(),
         newUser.getBio(), newUser.getImage());
@@ -83,7 +82,7 @@ public class UserApiTest {
         Optional.of(userData));
 
     given()
-        .postProcessors(httpBasic("admin","password"))
+        .postProcessors(httpBasic("admin","password1"))
         .when()
         .get("/users/{username}", newUser.getUserName())
         .prettyPeek()

@@ -74,7 +74,6 @@ public class UserApiTest {
   }
 
   @Test
-//  @WithMockUser(value = "spring")
   public void should_query_user_succeed(){
     UserData userData = new UserData(newUser.getId(), newUser.getEmail(), newUser.getUserName(),
         newUser.getBio(), newUser.getImage());
@@ -89,5 +88,39 @@ public class UserApiTest {
         .prettyPeek()
         .then()
         .statusCode(200);
+  }
+
+  @Test
+  public void should_403_if_query_user_with_no_admin(){
+    UserData userData = new UserData(newUser.getId(), newUser.getEmail(), newUser.getUserName(),
+        newUser.getBio(), newUser.getImage());
+
+    Mockito.when(mybatisUserQueryService.findByUsername(eq(newUser.getUserName()))).thenReturn(
+        Optional.of(userData));
+
+    given()
+        .postProcessors(httpBasic("user","123"))
+        .when()
+        .get("/users/{username}", newUser.getUserName())
+        .prettyPeek()
+        .then()
+        .statusCode(403);
+  }
+
+  @Test
+  public void should_401_if_query_user_with_Unauthorized_user(){
+    UserData userData = new UserData(newUser.getId(), newUser.getEmail(), newUser.getUserName(),
+        newUser.getBio(), newUser.getImage());
+
+    Mockito.when(mybatisUserQueryService.findByUsername(eq(newUser.getUserName()))).thenReturn(
+        Optional.of(userData));
+
+    given()
+        .postProcessors(httpBasic("user","12345"))
+        .when()
+        .get("/users/{username}", newUser.getUserName())
+        .prettyPeek()
+        .then()
+        .statusCode(401);
   }
 }

@@ -21,7 +21,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .antMatchers(HttpMethod.POST, "/users")
         .permitAll()
         .antMatchers(HttpMethod.GET, "/users/*")
-        .authenticated()
+        .hasRole("ADMIN")
         .and()
         .formLogin()
         .and()
@@ -34,6 +34,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .passwordEncoder(new BCryptPasswordEncoder())
         .withUser("admin")
         .password(new BCryptPasswordEncoder().encode("password"))
-        .roles("ADMIN");
+        .roles("ADMIN")
+        .and()
+        .withUser("user")
+        .password(new BCryptPasswordEncoder().encode("123"))
+        .roles("USER");
   }
 }
