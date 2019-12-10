@@ -1,10 +1,8 @@
-package com.yang.hateoas.model;
+package com.yang.hateoas.domain;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.hateoas.ResourceSupport;
-import org.springframework.web.bind.annotation.GetMapping;
 
 public class Greeting extends ResourceSupport {
   
