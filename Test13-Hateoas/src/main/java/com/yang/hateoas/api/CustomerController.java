@@ -99,7 +99,6 @@ public class CustomerController {
     return ResponseEntity.ok(result);
   }
 
-
 }
 
 class CustomerDataResource extends Resource<CustomerData> {

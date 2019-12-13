@@ -3,10 +3,10 @@ package com.yang.hateoas.api;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import org.springframework.util.Assert;
 
@@ -16,7 +16,7 @@ public class Resource<T> {
   private T content;
   private Map<String, String> links = new LinkedHashMap<>();
 
-  public Resource(T content, Iterable<Link> links) {
+  public Resource(T content, List links) {
     Assert.notNull(content, "Content must not be null");
     this.content = content;
     this.add(links);
