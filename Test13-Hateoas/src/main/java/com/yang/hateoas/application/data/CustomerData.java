@@ -8,7 +8,7 @@ import org.springframework.hateoas.ResourceSupport;
 
 @ToString
 @Getter
-public class CustomerData extends ResourceSupport {
+public class CustomerData {
   private String customerName;
   private String customerId;
   private String companyName;

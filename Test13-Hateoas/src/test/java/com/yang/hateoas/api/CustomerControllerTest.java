@@ -87,6 +87,54 @@ public class CustomerControllerTest {
   }
 
   /**
+   * 这个测试值返回resource和自定义的links。
+   *
+   * 测试：CustomerController.getCustomerByNameWithCustomLinks()方法。
+   */
+
+  @Test
+  public void should_get_customer_by_name_with_customer_link_succeed() {
+
+    String customerName = "diego";
+
+    when(customerService.getCustomerByName(eq(customerName)))
+        .thenReturn(FixtureDomain.getCustomerById(customerName));
+
+    given()
+        .contentType(ContentType.JSON)
+        .when()
+        .get("/customers/{customerName}/withCustomLinks", customerName)
+        .prettyPeek()
+        .then()
+        .statusCode(200);
+  }
+
+  /**
+   * 这个测试值返回resource和多个自定义的links。
+   *
+   * 测试：CustomerController.getCustomerByNameWithMultipleCustomLinks()方法。
+   */
+
+  @Test
+  public void should_get_customer_by_name_with_multiple_custom_link_succeed() {
+
+    String customerName = "diego";
+
+    when(customerService.getCustomerByName(eq(customerName)))
+        .thenReturn(FixtureDomain.getCustomerById(customerName));
+
+    given()
+        .contentType(ContentType.JSON)
+        .when()
+        .get("/customers/{customerName}/withMultipleCustomLinks", customerName)
+        .prettyPeek()
+        .then()
+        .statusCode(200);
+  }
+
+
+
+  /**
    * 测试：CustomerController.getOrdersForCustomer()方法。
    */
   @Test

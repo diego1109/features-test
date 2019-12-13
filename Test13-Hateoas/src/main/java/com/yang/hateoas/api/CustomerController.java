@@ -1,14 +1,17 @@
 package com.yang.hateoas.api;
 
 
+import static java.util.Arrays.asList;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 import com.yang.hateoas.application.CustomerService;
 import com.yang.hateoas.application.OrderService;
+import com.yang.hateoas.application.data.CustomerData;
 import com.yang.hateoas.domain.Customer;
 import com.yang.hateoas.domain.Order;
 import java.util.List;
+import org.apache.el.parser.AstListData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resources;
@@ -51,6 +54,29 @@ public class CustomerController {
     return ResponseEntity.ok(customer);
   }
 
+  @GetMapping("/{customerName}/withCustomLinks")
+  public ResponseEntity getCustomerByNameWithCustomLinks(@PathVariable String customerName) {
+    Customer customer = customerService.getCustomerByName(customerName);
+    CustomerData customerData = new CustomerData(customer);
+    Link link = new Link("http://localhost:8080/spring-security-rest/api/customers/10A");
+    com.yang.hateoas.api.Link customLink = new com.yang.hateoas.api.Link(link.getRel(),
+        link.getHref());
+    return ResponseEntity.ok(new CustomerDataResource(customerData, customLink));
+  }
+
+  @GetMapping("/{customerName}/withMultipleCustomLinks")
+  public ResponseEntity getCustomerByNameWithMultipleCustomLinks(@PathVariable String customerName) {
+    Customer customer = customerService.getCustomerByName(customerName);
+    CustomerData customerData = new CustomerData(customer);
+    Link link = new Link("http://localhost:8080/spring-security-rest/api/customers/10A");
+    com.yang.hateoas.api.Link customLink = new com.yang.hateoas.api.Link(link.getRel(),
+        link.getHref());
+    com.yang.hateoas.api.Link customAnotherLink = new com.yang.hateoas.api.Link("another_self",
+        linkTo(CustomerController.class).slash(customer.getCustomerName())
+            .slash(customer.getCustomerId()).withSelfRel().getHref());
+    return ResponseEntity.ok(new CustomerDataResource(customerData, asList(customLink,customAnotherLink)));
+  }
+
   @GetMapping("/{customerId}/orders/{orderId}")
   public Order getOrderByIdForCustomer(@PathVariable String customerId,
                                        @PathVariable String orderId) {
@@ -74,6 +100,16 @@ public class CustomerController {
   }
 
 
+}
+
+class CustomerDataResource extends Resource<CustomerData> {
+
+  public CustomerDataResource(CustomerData content, com.yang.hateoas.api.Link links) {
+    super(content, links);
+  }
+  public CustomerDataResource(CustomerData content, List<com.yang.hateoas.api.Link> links) {
+    super(content, links);
+  }
 }
 
 
